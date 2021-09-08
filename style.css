@@ -139,7 +139,6 @@ h1 {
 .skills__content {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
     justify-content: space-around;
 }
 
