@@ -140,15 +140,15 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .skills__content img {
-    width: 350px;
+    width: 300px;
 }
 
 .experience__content img {
-    width: 560px;
+    width: 500px;
 }
 
 .experience__content h2,
@@ -159,7 +159,10 @@ h1 {
     margin-bottom: 20px;
 }
 
-.skills__content-about,
+.skills__content-about {
+    width: 600px;
+}
+
 .experience__content-about {
     width: 600px;
 }
