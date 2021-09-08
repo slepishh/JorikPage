@@ -6,7 +6,6 @@ body {
     font-family: 'Inconsolata', monospace;
     text-decoration: none;
     background-color: #DFDFE1;
-    
 }
 
 .container {
@@ -17,7 +16,7 @@ body {
 
 .header,
 .after__header {
-    background-color: #939498;
+    background-color: #263238;
 }
 
 .header__content__top {
@@ -27,7 +26,6 @@ body {
     align-items: center;
 }
 
-
 .nav a {
     display: inline-block;
     padding: 8px 15px;
@@ -35,12 +33,11 @@ body {
     font-size: 20px;
     text-decoration: none;
     margin: 5px;
-    border: 3px solid rgba(255,255,255, 0)
+    border: 3px solid rgba(255, 255, 255, 0)
 }
 
 .nav a:hover {
     border: 3px solid #fff;
-    
     border-radius: 100px;
 }
 
@@ -52,97 +49,145 @@ body {
     font-size: 20px;
 }
 
-.logo img{
+.logo img {
     width: 60px;
     margin-right: 15px;
 }
 
-.header__content__bottom{
+.header__content__bottom {
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    text-align: justify;
+    color: #62727b;
 }
 
-h1{
+h1 {
     font-size: 40px;
     font-weight: 600;
     line-height: 1.5;
 }
-.header__content__bottom p{
-    margin: 50px 0;
-    font-size: 24px;
-}
-.bold{
+
+.header__content__bottom p {}
+
+.bold {
     font-weight: bold;
 }
 
-.header__content__bottom button{
+.header__content__bottom button {
     border: none;
     outline: none;
-    background-color: #fff;
+    background-color: #3FBB7D;
     font-size: 20px;
     border-radius: 50px;
     padding: 10px 15px;
     font-weight: bold;
     margin-top: 20px;
-    border: 5px solid #fff;
+    border: 5px solid #3FBB7D;
+    color: #3B3233;
 }
-.header__content__bottom button:hover{
-    border: 5px solid #fff;
-    background-color: rgba(255,255,255, 0);
+
+.header__content__bottom button:hover {
+    border: 5px solid #4f5b62;
+    background-color: rgba(255, 255, 255, 0);
+    color: #4f5b62;
 }
+
+
 /*.about__content{
     display: flex;
     align-items: center;
 }*/
-.about__text, .about__img{
-    width: 600px;
 
+.about__text,
+.about__img {
+    width: 600px;
+    ;
 }
-.about__img{
-    background-image: url(img/clear-window.svg);
+
+.about__text p {
+    line-height: 40px;
+    width: 500px;
+    margin: 50px 0;
+    font-size: 24px;
+}
+
+.about__text button {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.about__img {
+    background-image: url(img/android.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
 }
-.about__img p{
+
+.about__img p {
     padding: 5px 10px;
 }
-#experience{
+
+#experience {
     padding: 100px 0;
-    background-color: #E7E7E9;
+    background-color: #37474f;
+    color: #6c7d88;
 }
-.experience__content, .skills__content{
+
+.experience__content,
+.skills__content {
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
-.experience__content h2, .skills__content h2 {
+
+.skills__content img {
+    width: 350px;
+}
+
+.experience__content img {
+    width: 560px;
+}
+
+.experience__content h2,
+.skills__content h2 {
     font-size: 40px;
     width: 400px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
-#skills{
-    background-color: #ACADB1;
+.skills__content-about,
+.experience__content-about {
+    width: 600px;
+}
+
+#skills {
+    background-color: #263238;
+    color: #62727b;
     padding: 100px 0;
 }
 
-.skills__content__about ul{
+.skills__content-about ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 15px;
+    width: 400px;
 }
-.skills__content__about li{
-   font-size: ;
+
+.skills__content-about li {
+    margin: 0 20px 20px 0;
 }
-.skills__list{
+
+.skills__list {
     font-weight: bold;
     font-size: 20px;
 }
-.skills__list__name{
+
+.skills__list__name {
     font-size: 18px;
     margin-top: 5px;
 }
