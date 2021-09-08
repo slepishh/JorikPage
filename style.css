@@ -69,8 +69,6 @@ h1 {
     line-height: 1.5;
 }
 
-.header__content__bottom p {}
-
 .bold {
     font-weight: bold;
 }
@@ -131,23 +129,25 @@ h1 {
 
 #experience {
     padding: 100px 0;
-    background-color: #37474f;
+    background-color: #263238;
     color: #6c7d88;
 }
 
 .experience__content,
-.skills__content {
+.skills__content,
+.about__content {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .skills__content img {
-    width: 300px;
+    width: 350px;
 }
 
-.experience__content img {
-    width: 500px;
+.experience__content img,
+.about__content img {
+    width: 300px;
 }
 
 .experience__content h2,
@@ -158,16 +158,15 @@ h1 {
     margin-bottom: 20px;
 }
 
-.skills__content-about {
-    width: 600px;
-}
-
+.skills__content-about,
+.about__content-text,
 .experience__content-about {
     width: 600px;
 }
 
-#skills {
-    background-color: #263238;
+#skills,
+#about {
+    background-color: #37474f;
     color: #62727b;
     padding: 100px 0;
 }
