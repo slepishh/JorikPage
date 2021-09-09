@@ -29,7 +29,7 @@ body {
 .nav a {
     display: inline-block;
     padding: 8px 15px;
-    color: white;
+    color: rgb(170, 170, 170);
     font-size: 20px;
     text-decoration: none;
     margin: 5px;
@@ -44,7 +44,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    color: #fff;
+    color: rgb(170, 170, 170);
     font-weight: bold;
     font-size: 20px;
 }
@@ -114,6 +114,7 @@ h1 {
 .about__text button {
     text-transform: uppercase;
     font-size: 16px;
+    color: #4F5B62;
 }
 
 .about__img {
@@ -141,33 +142,63 @@ h1 {
     justify-content: space-around;
 }
 
-.skills__content img {
-    width: 350px;
+.experience__content img {
+    width: 500px;
 }
 
-.experience__content img,
-.about__content img {
+.experience__content li {
+    margin-bottom: 10px;
+    text-align: justify;
+    position: relative;
+    padding-left: 20px;
+}
+
+.experience__content li::before {
+    content: "";
+    background-image: url(img/android.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 10px;
+    background-size: cover;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.exp__list2,
+.experience__content-about {
+    width: 45%;
+}
+
+.about__content img,
+.skills__content img {
     width: 300px;
 }
 
-.experience__content h2,
-.skills__content h2 {
+#experience h2,
+.skills__content h2,
+.about__content h2 {
     font-size: 40px;
     width: 400px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
+.about__content p {
+    margin-bottom: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+
 .skills__content-about,
-.about__content-text,
-.experience__content-about {
+.about__content-text {
     width: 600px;
 }
 
 #skills,
 #about {
     background-color: #37474f;
-    color: #62727b;
+    color: rgb(170, 170, 170);
     padding: 100px 0;
 }
 
