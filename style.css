@@ -139,7 +139,7 @@ h1 {
 .about__content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .experience__content img {
@@ -167,7 +167,7 @@ h1 {
 
 .exp__list2,
 .experience__content-about {
-    width: 45%;
+    width: 47%;
 }
 
 .about__content img,
@@ -192,7 +192,7 @@ h1 {
 
 .skills__content-about,
 .about__content-text {
-    width: 600px;
+    width: 800px;
 }
 
 #skills,
@@ -207,19 +207,38 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 15px;
-    width: 400px;
+    width: 800px;
 }
 
 .skills__content-about li {
     margin: 0 20px 20px 0;
-}
-
-.skills__list {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.skills__list__name {
     font-size: 18px;
+}
+
+.skills__list-name {
+    font-weight: bold;
+    font-size: 22px;
+    color: #263238;
+}
+
+.skills__list-content {
     margin-top: 5px;
+    width: 240px;
+    line-height: 20px;
+}
+
+.skills__dop {
+    font-size: 30px;
+    color: #263238;
+    font-weight: bold;
+}
+
+.skills__dop li {
+    color: #aaa;
+}
+
+.skills__dop-text {
+    color: #aaa;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
