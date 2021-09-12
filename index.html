@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JorikPage</title>
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/jorik_fat_logo.svg" type="image/x-icon">
@@ -17,14 +18,17 @@
         <div class="container">
             <div class="header__content__top">
                 <div class="logo">
-                    <img src="img/jorik_fat_logo.svg" alt="">
+                    <div class="logo__name">
+                        <p>Jorick</p>
+                        <p>Fat</p>
+                    </div>
                     <p>Портфолио</p>
                 </div>
                 <div class="nav">
-                    <a href="#">Обо мне</a>
-                    <a href="#">Коммерческий опыт</a>
-                    <a href="#">Стек технологий</a>
-                    <a href="#">Контакты</a>
+                    <a href="#about">Обо мне</a>
+                    <a href="#experience">Коммерческий опыт</a>
+                    <a href="#skills">Стек технологий</a>
+                    <a href="#contacts">Контакты</a>
                 </div>
             </div>
             <div class="header__content__bottom">
@@ -115,7 +119,7 @@
             <div class="skills__content">
 
                 <div class="skills__content__h2">
-                    <img src="img/android-exp1.svg" alt="">
+                    <img src="img/android-exp.svg" alt="">
                 </div>
                 <div class="skills__content-about">
                     <h2> Стек технологий</h2>
@@ -123,74 +127,153 @@
                     <ul>
                         <li>
                             <div class="skills__list-name">MinSDK</div>
-                            <div class="skills__list-content">16</div>
+
+                            <ul class="skills__list-content">
+                                <li>16</li>
+                            </ul>
+
                         </li>
                         <li>
                             <div class="skills__list-name">Языки</div>
-                            <div class="skills__list-content">Java / Kotlin / Groovy</div>
+
+                            <ul class="skills__list-content">
+                                <li>Java</li>
+                                <li>Kotlin</li>
+                                <li>Groovy</li>
+                            </ul>
                         </li>
-                        <li>
-                            <div class="skills__list-name">Support:</div>
-                            <div class="skills__list-content">Crashlytics, Bugfender</div>
-                        </li>
-                        <li>
-                            <div class="skills__list-name">Presentation:</div>
-                            <div class="skills__list-content">Mvp(Moxy), ViewModel (MVVM)</div>
-                        </li>
+
                         <li>
                             <div class="skills__list-name">Analytics:</div>
-                            <div class="skills__list-content">Google, Amplitude, Facebook</div>
+                            <ul class="skills__list-content">
+                                <li>Google</li>
+                                <li>Amplitude</li>
+                                <li>Facebook</li>
+                            </ul>
                         </li>
                         <li>
                             <div class="skills__list-name">DB:</div>
-                            <div class="skills__list-content">SqliteOpenHelper, Room, Realm</div>
+                            <ul class="skills__list-content">
+                                <li>SqliteOpenHelper</li>
+                                <li>Room</li>
+                                <li>Realm</li>
+                            </ul>
                         </li>
-
                         <li>
-                            <div class="skills__list-name">Google:</div>
-                            <div class="skills__list-content">Maps, Drive, TTS/STT</div>
+
+                            <div class="skills__list-name">DI:</div>
+                            <ul class="skills__list-content">
+                                <li>Dagger2</li>
+                                <li>Toothpick</li>
+                            </ul>
                         </li>
                         <li>
                             <div class="skills__list-name">Testing:</div>
-                            <div class="skills__list-content">Junit, Mockito</div>
+                            <ul class="skills__list-content">
+                                <li>Junit</li>
+                                <li>Mockito</li>
+
+                            </ul>
+
+                        </li>
+
+                        <li>
+                            <div class="skills__list-name">Support:</div>
+                            <ul class="skills__list-content">
+                                <li>Crashlytics</li>
+                                <li>Bugfender</li>
+
+                            </ul>
+
                         </li>
                         <li>
-                            <div class="skills__list-name">DI:</div>
-                            <div class="skills__list-content">Dagger2, Toothpick</div>
+                            <div class="skills__list-name">Presentation:</div>
+                            <ul class="skills__list-content">
+                                <li>Mvp(Moxy)</li>
+                                <li>ViewModel (MVVM)</li>
+
+                            </ul>
                         </li>
+
+
                         <li>
                             <div class="skills__list-name">Firebase:</div>
-                            <div class="skills__list-content">Realtime Database, Storage, Authentification, Cloud Messages</div>
+                            <ul class="skills__list-content">
+                                <li>Realtime Database</li>
+                                <li>Storage</li>
+                                <li>Authentification</li>
+                                <li>Cloud Messages</li>
+                            </ul>
                         </li>
                         <li>
                             <div class="skills__list-name">REST/API:</div>
-                            <div class="skills__list-content">Retrofit 2, Gson, Jackson, OkHttp, jwtdecode, Jsoup</div>
+                            <ul class="skills__list-content">
+                                <li>Retrofit 2</li>
+                                <li>Gson</li>
+                                <li>Jackson</li>
+                                <li>OkHttp</li>
+                                <li>jwtdecode</li>
+                                <li>Jsoup</li>
+                            </ul>
                         </li>
-
                         <li>
                             <div class="skills__list-name">Git:</div>
-                            <div class="skills__list-content">Github, BitBucket, Heroku, GitLab</div>
+                            <ul class="skills__list-content">
+                                <li>Github</li>
+                                <li>BitBucket</li>
+                                <li>Heroku</li>
+                                <li>GitLab</li>
+                            </ul>
                         </li>
                         <li>
                             <div class="skills__list-name">View:</div>
-                            <div class="skills__list-content">XML, Picasso, Glide, ViewBinding</div>
+                            <ul class="skills__list-content">
+                                <li>XML</li>
+                                <li>Picasso</li>
+                                <li>Glide</li>
+                                <li>ViewBinding</li>
+                            </ul>
                         </li>
-
+                        <li>
+                            <div class="skills__list-name">Google:</div>
+                            <ul class="skills__list-content">
+                                <li>Maps</li>
+                                <li>Drive</li>
+                                <li>TTS/STT</li>
+                            </ul>
+                        </li>
                         <li>
                             <div class="skills__list-name">DadaFlow:</div>
-                            <div class="skills__list-content">RxJava2, LiveData,Callback</div>
+                            <ul class="skills__list-content">
+                                <li>RxJava2</li>
+                                <li>LiveData</li>
+                                <li>Callback</li>
+                            </ul>
+
                         </li>
                         <li>
                             <div class="skills__list-name">Concurrency:</div>
-                            <div class="skills__list-content">coroutines (Kotlin) / AsyncTask (Java)</div>
+                            <ul class="skills__list-content">
+                                <li>coroutines (Kotlin)</li>
+                                <li>AsyncTask (Java)</li>
+
+                            </ul>
                         </li>
                         <li>
                             <div class="skills__list-name">Oth:</div>
-                            <div class="skills__list-content"> TelegramBotsApi, форматирование адресов Dadata, moneta.ru</div>
+                            <ul class="skills__list-content">
+                                <li>TelegramBotsApi</li>
+                                <li>форматирование адресов Dadata</li>
+                                <li>moneta.ru</li>
+
+                            </ul>
                         </li>
                         <li>
                             <div class="skills__list-name">Знаю и умею:</div>
-                            <div class="skills__list-content">SOLID, YAGNI, DRY, CleanArchitecture, (KISS)</div>
+                            <ul class="skills__list-content">
+                                <li>SOLID, YAGNI, DRY, KISS</li>
+                                <li>CleanArchitechture</li>
+                            </ul>
                         </li>
 
                     </ul>
@@ -203,9 +286,9 @@
 
                         </ul>
                     </h3>
-                    <p class="skills__dop-text">- Курирую обучение нескольких джунов.</p>
+                    <p class="skills__dop-text">- Курирую обучение нескольких джунов;</p>
 
-                    <p class="skills__dop-text">- Сейчас изучаю построение многомодульных приложений (и разбиение существующих на независимые модули)</p>
+                    <p class="skills__dop-text">- Сейчас изучаю построение многомодульных приложений (и разбиение существующих на независимые модули);</p>
 
                 </div>
 
@@ -213,9 +296,45 @@
         </div>
     </section>
     <section id="contacts">
+        <div class="container">
+            <h2>Мои контакты</h2>
+            <div class="contacts__content">
+                <div class="contacts__form">
+                    <form id="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">
+                        <p class="contact-form__title">Отправьте свой бриф</p>
+                        <p class="contact-form__message"></p>
+                        <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+                            <input name="name" type="text" class="contact-form__input contact-form__input_name" tabindex="0" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
+                            <input name="phone" type="tel" class="contact-form__input contact-form__input_phone" tabindex="0" placeholder="Введите ваш телефон">
+                        </div>
+                        <div class="contact-form__input-wrapper contact-form__input-wrapper_desc">
+                            <textarea rows="7" name="description" type="text" class="contact-form__input contact-form__input_desc" tabindex="0" placeholder="Добавьте описание к вашему брифу или напишите свои вопросы"></textarea>
+                        </div>
+                        <div class="contact-form__input-wrapper">
+                            <input type="file" name="file" id="contact-form__input_file" class="contact-form__input contact-form__input_file">
+                            <label for="contact-form__input_file" class="contact-form__file-button">
+                            <span class="contact-form__file-text">Выберите файл</span>
+                        </label>
+                        </div>
+                        <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme" value="Заявка с сайта">
+                        <button type="submit" class="contact-form__button">Отправить</button>
+                    </form>
+                </div>
+                <div class="contacts__text"></div>
+            </div>
+        </div>
 
     </section>
 
+
+
+    <?php
+    include '1.php';
+?>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,10 @@
+@font-face {
+    font-family: MPLUSRounded1c-Black;
+    /* Имя шрифта */
+    src: url(fonts/MPLUSRounded1c-Black.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
 * {
     box-sizing: border-box;
 }
@@ -34,7 +41,7 @@ body {
     font-size: 20px;
     text-decoration: none;
     margin: 5px;
-    border: 3px solid rgba(255, 255, 255, 0)
+    border: 3px solid rgba(255, 255, 255, 0);
 }
 
 .nav a:hover {
@@ -48,6 +55,15 @@ body {
     color: rgb(170, 170, 170);
     font-weight: bold;
     font-size: 20px;
+}
+
+.logo__name {
+    color: #3FBB7D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    font-family: MPLUSRounded1c-Black;
 }
 
 .logo img {
@@ -68,6 +84,13 @@ h1 {
     font-size: 40px;
     font-weight: 600;
     line-height: 1.5;
+}
+
+h2 {
+    font-size: 40px;
+    width: 400px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .bold {
@@ -102,7 +125,6 @@ h1 {
 .about__text,
 .about__img {
     width: 600px;
-    ;
 }
 
 .about__text p {
@@ -129,7 +151,8 @@ h1 {
     padding: 5px 10px;
 }
 
-#experience {
+#experience,
+#contacts {
     padding: 100px 0;
     background-color: #263238;
     color: #6c7d88;
@@ -143,8 +166,8 @@ h1 {
     justify-content: space-between;
 }
 
-.experience__content img {
-    width: 500px;
+.skills__content {
+    flex-direction: row-reverse;
 }
 
 .experience__content li {
@@ -156,11 +179,10 @@ h1 {
 
 .experience__content li::before {
     content: "";
-    background-image: url(img/android.svg);
-    background-repeat: no-repeat;
-    width: 15px;
+    width: 10px;
     height: 10px;
-    background-size: cover;
+    border-radius: 100%;
+    background-color: #3FBB7D;
     position: absolute;
     top: 3px;
     left: 0;
@@ -171,18 +193,12 @@ h1 {
     width: 47%;
 }
 
-.about__content img,
-.skills__content img {
+.about__content img {
     width: 300px;
 }
 
-#experience h2,
-.skills__content h2,
-.about__content h2 {
-    font-size: 40px;
+.skills__content img {
     width: 400px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
 }
 
 .about__content p {
@@ -208,12 +224,12 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 15px;
-    width: 800px;
 }
 
 .skills__content-about li {
     margin: 0 20px 20px 0;
     font-size: 18px;
+    width: 180px;
 }
 
 .skills__list-name {
@@ -226,6 +242,19 @@ h1 {
     margin-top: 5px;
     width: 240px;
     line-height: 20px;
+    flex-direction: column;
+}
+
+.skills__list-content li {
+    padding: 0 0 0 12px;
+    position: relative;
+}
+
+.skills__list-content li::before {
+    content: "-";
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .skills__dop {
@@ -243,3 +272,47 @@ h1 {
     margin-bottom: 10px;
     font-size: 20px;
 }
+
+.contact-form {
+    width: 500px;
+    background-color: #37474f;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.contact-form__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contact-form__message {}
+
+.contact-form__input-wrapper {}
+
+.contact-form__input-wrapper_name {}
+
+.contact-form__input {
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.contact-form__input_name {}
+
+.contact-form__input-wrapper_phone {}
+
+.contact-form__input_phone {}
+
+.contact-form__input-wrapper_desc {}
+
+.contact-form__input_desc {}
+
+.contact-form__input_file {}
+
+.contact-form__file-button {}
+
+.contact-form__file-text {}
