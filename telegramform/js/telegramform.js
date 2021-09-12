@@ -10,7 +10,7 @@
 
         let fd = new FormData(form);
         $.ajax({
-            url: "send-message-to-telegram.php",
+            url: "telegramform/php/send-message-to-telegram.php ",
             type: "POST",
             data: fd,
             processData: false,
