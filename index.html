@@ -49,7 +49,7 @@
     <section id="about">
         <div class="container">
             <div class="about__content">
-                <img src="img/android-edc.svg" alt="">
+                <img src="img/android-edc-a.svg" alt="">
                 <div class="about__content-text">
                     <h2>Обо мне</h2>
                     <p>Учился на программиста в техникуме c 2010г, в котором получил только азы процедурного программирования. </p>
@@ -119,7 +119,7 @@
             <div class="skills__content">
 
                 <div class="skills__content__h2">
-                    <img src="img/android-exp.svg" alt="">
+                    <img src="img/android-exp-a.svg" alt="">
                 </div>
                 <div class="skills__content-about">
                     <h2> Стек технологий</h2>
@@ -299,43 +299,28 @@
     <section id="contacts">
         <div class="container">
             <h2>Мои контакты</h2>
-            <div class="contacts__content">
-                <div class="contacts__form">
-                    <form id="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">
-                        <p class="contact-form__title">Отправьте свой бриф</p>
-                        <p class="contact-form__message"></p>
-                        <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
-                            <input name="name" type="text" class="contact-form__input contact-form__input_name" tabindex="0" placeholder="Введите ваше имя">
-                        </div>
-                        <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
-                            <input name="phone" type="tel" class="contact-form__input contact-form__input_phone" tabindex="0" placeholder="Введите ваш телефон">
-                        </div>
-                        <div class="contact-form__input-wrapper contact-form__input-wrapper_desc">
-                            <textarea rows="7" name="description" type="text" class="contact-form__input contact-form__input_desc" tabindex="0" placeholder="Добавьте описание к вашему брифу или напишите свои вопросы"></textarea>
-                        </div>
-                        <div class="contact-form__input-wrapper">
-                            <input type="file" name="file" id="contact-form__input_file" class="contact-form__input contact-form__input_file">
-                            <label for="contact-form__input_file" class="contact-form__file-button">
-                            <span class="contact-form__file-text">Выберите файл</span>
-                        </label>
-                        </div>
-                        <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme" value="Заявка с сайта">
-                        <button type="submit" class="contact-form__button">Отправить</button>
-                    </form>
+            <div class="contact__content">
+                <div class="contact__telegram">
+                    <a href=""> Написать мне в Телеграмм</a>
                 </div>
-                <div class="contacts__text"></div>
+                <div class="contanct__mail">
+                    <a href="">Написать мне на почту</a>
+                </div>
             </div>
         </div>
 
     </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">© Все права защищены, но это не точно</p>
+                <p>Сделано с душой - <a href="">Slep.ishh</a></p>
+            </div>
+        </div>
+    </footer>
 
 
 
-    <?php
-    include 'send-message-to-telegram.php';
-?>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script src="telegramform/js/telegramform.js"></script>
 </body>
 
 </html>
