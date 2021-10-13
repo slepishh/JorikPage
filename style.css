@@ -23,10 +23,13 @@ body {
     font-size: 18px;
 }
 
+.burger-menu {
+    display: none;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
-    font-family:
 }
 
 .header,
