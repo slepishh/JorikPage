@@ -6,9 +6,16 @@
 }
 
 @font-face {
-    font-family: ShareTechMono;
+    font-family: YanoneKaffeesatz;
     /* Имя шрифта */
-    src: url(fonts/ShareTechMono-Regular.ttf);
+    src: url(fonts/YanoneKaffeesatz-VariableFont_wght.ttf);
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Play;
+    /* Имя шрифта */
+    src: url(fonts/Play-Regular.ttf);
     /* Путь к файлу со шрифтом */
 }
 
@@ -17,7 +24,7 @@
 }
 
 body {
-    font-family: ShareTechMono;
+    font-family: Play;
     text-decoration: none;
     background-color: #DFDFE1;
     font-size: 18px;
@@ -98,7 +105,7 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2em;
     width: 400px;
     text-transform: uppercase;
     margin-bottom: 20px;

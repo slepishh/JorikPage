@@ -116,10 +116,19 @@
         width: 100%;
     }
     .skills__list-content {
-        width: 30%;
+        width: 100%;
     }
     .experience__content {
         flex-direction: column;
+    }
+    .last-list li {
+        width: 128px;
+    }
+    .last-list {
+        width: 200px;
+    }
+    .skills__list-content li {
+        width: 100%;
     }
     .exp__list2,
     .experience__content-about {
@@ -134,5 +143,26 @@
     }
     .contanct__mail {
         margin: 10px 0 0 0;
+    }
+    #contacts,
+    #skills,
+    #experience,
+    #about,
+    .footer {
+        padding: 50px 0;
+    }
+    .header {
+        padding-bottom: 50px;
+    }
+    .about__text,
+    .header__content__bottom {
+        padding: 0;
+        margin: 0;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        height: 40px;
+        justify-content: space-between;
     }
 }
